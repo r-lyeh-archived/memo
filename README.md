@@ -14,16 +14,24 @@ sample
 ------
 
 ```c++
-// create a factory, string id type
-memo::factory< std::string > factory;
+    // abstract factory: locate items by string id
+    memo::factory< std::string > factory;
 
-// register a few items of any kind. say, textures, anims, maps, texts [...]
-factory["numbers"] = std::vector<int>( {1,2,3,4,5} );
-factory["names"] = std::list<std::string>( {"john", "mark", "tony"} );
+    // inscribe items of any kind (textures, anims, maps, texts...)
+    factory["numbers"] = std::vector<int>( {1,2,3,4,5} );
+    factory["names"] = std::list<std::string>( {"john", "mark", "tony"} );
 
-// clone items
-std::vector<int> numbers = factory["numbers"];
-std::list<std::string> names = factory["names"];
-assert( 5 == numbers.size() );
-assert( 3 == names.size() );
+    // clone items (implicit casting)
+    std::vector<int> numbers = factory["numbers"];
+
+    // clone items (explicit casting)
+    std::list<std::string> names = factory["names"].as< std::list<std::string> >();
+
+    // tests
+    assert( 5 == numbers.size() );
+    assert( 3 == names.size() );
+
+    // delete items on factory destruction
 ```
+
+Check [sample.cc](sample.cc) for detailed usage.

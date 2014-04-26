@@ -1,5 +1,5 @@
 /*
- * Simple factory class
+ * Simple abstract factory class.
  * Copyright (c) 2014 Mario 'rlyeh' Rodriguez
 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -38,6 +38,8 @@ namespace memo
     template< typename K >
     using factory = std::map< K, memo::any >;
 }
+
+/* API details following */
 
 /*
  * (C) Copyright Mario "rlyeh" Rodriguez 2010
