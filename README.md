@@ -8,7 +8,7 @@ memo
 - Cross-platform. Builds on Windows/Linux/MacosX. Compiles on g++/clang/msvc.
 - No external dependencies.
 - Tiny. Header only.
-- MIT licensed.
+- BOOST licensed.
 
 sample
 ------
