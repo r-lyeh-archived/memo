@@ -26,7 +26,8 @@
 #pragma once
 
 #include <cstdint>
-
+#include <cassert>
+ 
 #include <algorithm>
 #include <map>
 #include <typeinfo>
