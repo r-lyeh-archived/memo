@@ -1,4 +1,4 @@
-memo
+memo <a href="https://travis-ci.org/r-lyeh/memo"><img src="https://api.travis-ci.org/r-lyeh/memo.svg?branch=master" align="right" /></a>
 ====
 
 - Simple and lightweight factory class, written in C++11.
