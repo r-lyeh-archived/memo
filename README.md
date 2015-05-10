@@ -1,14 +1,13 @@
 memo <a href="https://travis-ci.org/r-lyeh/memo"><img src="https://api.travis-ci.org/r-lyeh/memo.svg?branch=master" align="right" /></a>
 ====
 
-- Simple and lightweight factory class, written in C++11.
-- An abstract factory class, designed mainly for resource handling.
-- Automatic type casting. Store resources of any kind in the very same factory.
-- Deterministic lifetime of objects, that get destroyed when factory is destroyed.
-- Cross-platform. Builds on Windows/Linux/MacosX. Compiles on g++/clang/msvc.
-- No external dependencies.
-- Tiny. Header only.
-- BOOST licensed.
+- Memo is a simple and lightweight factory class, written in C++11.
+- Memo is an abstract factory class, designed mainly for resource handling.
+- Memo is automatic type casting. Store resources of any kind in the very same factory.
+- Memo is deterministic lifetime of objects, that get destroyed when factory is destroyed.
+- Memo is cross-platform. Builds on Windows/Linux/MacosX. Compiles on g++/clang/msvc.
+- Memo is tiny, header-only, self-contained.
+- Memo is zlib/libpng licensed.
 
 sample
 ------
